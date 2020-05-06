@@ -32,14 +32,6 @@ test:
     - pandasdmx
     - pandasdmx.reader.sdmxml
     - pandasdmx.writer
-  requires:
-    - pytest >=3.3
-    - pytest-remotedata >=0.3.1
-    - requests-mock >=1.4
-  source_files:
-    - pandasdmx/tests
-  commands:
-    - pytest --pyargs pandasdmx
     
 about:
   home: "https://github.com/dr-leo/pandasdmx"
