@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
+    - python
     - pip
     - setuptools >19
   run:
     - lxml >=3.6
     - pandas >=0.24
     - pydantic >=1.1
-    - python
     - requests >=2.7
     - setuptools >19
 
