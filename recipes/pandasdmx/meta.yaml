@@ -1,13 +1,13 @@
-    {% set name = "pandasdmx" %}
-{% set version = "1.0.0b2" %}
+    {% set name = "pandaSDMX" %}
+{% set version = "1.0.0rc1" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f79ccd580f74296c204581a5183cabe69a7746912dbc134da726e6c7dd7fbbe8
+  url: "https://files.pythonhosted.org/packages/66/2e/42226652796172a36b415f0ee0e4b2a6d814524c508c615ce37450aa5746//{{ name }}-{{ version }}.tar.gz"
+  sha256: 0858e2bffcba4a0a9d799909fea2b7d7a883a264972e02aa9e110149886c8632
 
 build:
   number: 0
@@ -19,13 +19,11 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >19
   run:
     - lxml >=3.6
     - pandas >=0.24
     - pydantic >=1.1
     - requests >=2.7
-    - setuptools >19
 
 test:
   imports:
@@ -38,7 +36,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE 
-  summary: "A client for SDMX - Statistical Data and Metadata eXchange"
+  summary: "Statistical Data and Metadata eXchange (SDMX) for the Python data ecosystem"
   doc_url: "http://pandasdmx.readthedocs.io/" 
   dev_url: "https://github.com/dr-leo/pandasdmx" 
 
